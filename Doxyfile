@@ -1,0 +1,22 @@
+# Doxygen configuration for mirs_msgs interface package.
+# Usage: `doxygen Doxyfile` -> static HTML/XML under docs/generated (no server needed).
+# NOTE: .msg/.srv files are listed as files only (no API parsing).
+# Interface changes must update README.md contract table as well.
+
+PROJECT_NAME           = "mirs_msgs"
+OUTPUT_DIRECTORY       = docs/generated
+INPUT                  = README.md msg srv
+RECURSIVE              = YES
+FILE_PATTERNS          = *.md *.msg *.srv
+EXCLUDE_PATTERNS       = */__pycache__/*
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = YES
+GENERATE_DOCBOOK       = NO
+
+EXTRACT_ALL            = NO
+WARN_AS_ERROR          = YES
+QUIET                  = YES
