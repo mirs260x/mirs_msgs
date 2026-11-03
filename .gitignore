@@ -1,3 +1,4 @@
 # Doxygen generated output (rebuilt with `doxygen Doxyfile`)
 docs/generated/
 .cache/
+/docs/generated/

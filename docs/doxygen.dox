@@ -1,0 +1,45 @@
+/** @mainpage mirs_msgs
+
+機体の制御パラメータと指令をROS 2で受け渡すためのメッセージ・サービスの型を定める。
+
+各ファイルの説明からソースと宣言を参照できる。C/C++・Arduino・Python・JavaはDoxygenで解析する。Dart・Kotlin・ROS型定義・シェルはソース掲載ページを使う。コメントのない関数も一覧に含むが、その動作が説明済みという意味ではない。
+
+@section source_list ファイル一覧
+
+- @ref mirs_msgs_0 "msg/BasicParam.msg"
+
+- @ref mirs_msgs_1 "srv/BasicCommand.srv"
+
+- @ref mirs_msgs_2 "srv/ParameterUpdate.srv"
+
+- @ref mirs_msgs_3 "srv/SimpleCommand.srv"
+
+*/
+
+/** @page mirs_msgs_0 msg/BasicParam.msg
+
+ROS 2で受け渡すデータの型と項目を定義する。区切り行は要求・応答などの境界を表す。
+
+@verbinclude msg/BasicParam.msg
+*/
+
+/** @page mirs_msgs_1 srv/BasicCommand.srv
+
+ROS 2で受け渡すデータの型と項目を定義する。区切り行は要求・応答などの境界を表す。
+
+@verbinclude srv/BasicCommand.srv
+*/
+
+/** @page mirs_msgs_2 srv/ParameterUpdate.srv
+
+ROS 2で受け渡すデータの型と項目を定義する。区切り行は要求・応答などの境界を表す。
+
+@verbinclude srv/ParameterUpdate.srv
+*/
+
+/** @page mirs_msgs_3 srv/SimpleCommand.srv
+
+ROS 2で受け渡すデータの型と項目を定義する。区切り行は要求・応答などの境界を表す。
+
+@verbinclude srv/SimpleCommand.srv
+*/

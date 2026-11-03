@@ -1,22 +1,31 @@
-# Doxygen configuration for mirs_msgs interface package.
-# Usage: `doxygen Doxyfile` -> static HTML/XML under docs/generated (no server needed).
-# NOTE: .msg/.srv files are listed as files only (no API parsing).
-# Interface changes must update README.md contract table as well.
+# パッケージのルートで doxygen Doxyfile を実行する。
+PROJECT_NAME = "mirs_msgs"
+OUTPUT_DIRECTORY = docs/generated
+OUTPUT_LANGUAGE = Japanese
+INPUT_ENCODING = UTF-8
+INPUT = "docs/doxygen.dox"
+FILE_PATTERNS = *.dox *.c *.cc *.cpp *.h *.hpp *.ino *.py *.java
+EXTENSION_MAPPING = ino=C++
+RECURSIVE = NO
+EXAMPLE_PATH = .
+EXAMPLE_RECURSIVE = YES
+EXTRACT_ALL = YES
+EXTRACT_STATIC = YES
+EXTRACT_PRIVATE = NO
+SOURCE_BROWSER = YES
+INLINE_SOURCES = NO
+STRIP_FROM_PATH = .
+FULL_PATH_NAMES = YES
+PYTHON_DOCSTRING = NO
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
+GENERATE_XML = NO
+HAVE_DOT = NO
+QUIET = YES
+WARNINGS = YES
+WARN_IF_UNDOCUMENTED = NO
+WARN_AS_ERROR = YES
+WARN_LOGFILE = docs/generated/warnings.log
 
-PROJECT_NAME           = "mirs_msgs"
-OUTPUT_DIRECTORY       = docs/generated
-INPUT                  = README.md msg srv
-RECURSIVE              = YES
-FILE_PATTERNS          = *.md *.msg *.srv
-EXCLUDE_PATTERNS       = */__pycache__/*
-
-GENERATE_HTML          = YES
-GENERATE_LATEX         = NO
-GENERATE_MAN           = NO
-GENERATE_RTF           = NO
-GENERATE_XML           = YES
-GENERATE_DOCBOOK       = NO
-
-EXTRACT_ALL            = NO
-WARN_AS_ERROR          = YES
-QUIET                  = YES
+# 他の資料とブラウザのメニュー設定を共有しない。
+HTML_PROJECT_COOKIE = mirs_docs_mirs_msgs_v2
