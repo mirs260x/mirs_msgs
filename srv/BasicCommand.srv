@@ -1,6 +1,7 @@
+# 汎用4パラメータコマンド（/esp_cmd）。意味は受信側の解釈に依存する
 float64 param1
 float64 param2
 float64 param3
 float64 param4
 ---
-bool success
+bool success  # 受付結果

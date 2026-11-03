@@ -1,10 +1,11 @@
-float64 wheel_radius
-float64 wheel_base
-float64 rkp
-float64 rki
-float64 rkd
-float64 lkp
-float64 lki
-float64 lkd
+# 車輪・PIDパラメータ更新（/esp_update）。フィールドはBasicParamと同形
+float64 wheel_radius  # 車輪半径 [m]
+float64 wheel_base    # 車輪間距離 [m]
+float64 rkp           # 右輪Pゲイン
+float64 rki           # 右輪Iゲイン [1/s]
+float64 rkd           # 右輪Dゲイン [s]
+float64 lkp           # 左輪Pゲイン
+float64 lki           # 左輪Iゲイン [1/s]
+float64 lkd           # 左輪Dゲイン [s]
 ---
-bool success
+bool success  # 受付結果
